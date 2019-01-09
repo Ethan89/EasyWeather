@@ -1,0 +1,16 @@
+PODS:
+  - EasyWeather (0.1.0)
+
+DEPENDENCIES:
+  - EasyWeather (from `../`)
+
+EXTERNAL SOURCES:
+  EasyWeather:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  EasyWeather: 0d711a9f8d94bd65d6787a421ecbcaacd5786338
+
+PODFILE CHECKSUM: e6417689231ca84d9cae9e439b5f429b28cff4c6
+
+COCOAPODS: 1.5.0
