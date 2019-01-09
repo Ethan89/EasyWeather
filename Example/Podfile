@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'EasyWeather_Example' do
+  pod 'EasyWeather', :path => '../'
+
+  target 'EasyWeather_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
