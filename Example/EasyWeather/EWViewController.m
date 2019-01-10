@@ -7,6 +7,7 @@
 //
 
 #import "EWViewController.h"
+#import <EasyWeather/EasyWeatherTest.h>
 
 @interface EWViewController ()
 
@@ -17,7 +18,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    EasyWeatherTest *test = [[EasyWeatherTest alloc] init];
+    [test testFunc];
 }
 
 - (void)didReceiveMemoryWarning
@@ -25,5 +30,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
 
 @end
