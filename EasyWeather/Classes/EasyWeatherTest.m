@@ -28,7 +28,7 @@
             NSLog(@"查找%@所用时间 in %f ms, 查找结果: %@", cityName, time * 1000.0, city.cityCode);
         }
         
-        EWCityModel *wuxi = [easyWeather cityModelWithName:@"上海1"];
+        EWCityModel *wuxi = [easyWeather cityModelWithName:@"上海"];
         [easyWeather requestWeatherInfoWithCity:wuxi completion:^(NSError *error, NSDictionary *result) {
             if (!error) {
                 NSLog(@"请求成功");

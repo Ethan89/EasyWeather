@@ -78,8 +78,8 @@
     NSString *url = @"http://t.weather.sojson.com/api/weather/city/";
     url = [url stringByAppendingString:cityModel.cityCode];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]
-                                                           cachePolicy:NSURLRequestReloadIgnoringCacheData
-                                                       timeoutInterval:120.0];
+                                                           cachePolicy:NSURLRequestUseProtocolCachePolicy
+                                                       timeoutInterval:300.0];
     [request setHTTPMethod:@"GET"];
     
     NSURLSession *session = [NSURLSession sharedSession];
@@ -91,10 +91,12 @@
                                                         }
                                                     } else {
                                                         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+                                                        NSMutableDictionary *result = [NSMutableDictionary dictionaryWithDictionary:dict[@"data"]];
+                                                        [result setObject:dict[@"cityInfo"] forKey:@"cityInfo"];
                                                         NSInteger status = [dict[@"status"] integerValue];
                                                         if (status == 200) {
                                                             if (completion) {
-                                                                completion(nil, dict[@"data"]);
+                                                                completion(nil, result);
                                                             }
                                                         } else {
                                                             NSError *err = [NSError errorWithDomain:@"EasyWeather.responseError"
