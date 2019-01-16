@@ -3,6 +3,8 @@ use_frameworks!
 platform :ios, '8.0'
 
 target 'EasyWeather_Example' do
+  pod 'Masonry', '~> 1.1.0'
+  pod 'SVProgressHUD', '~> 2.2.5'
   pod 'EasyWeather', :path => '../'
 
   target 'EasyWeather_Tests' do

@@ -1,16 +1,27 @@
 PODS:
-  - EasyWeather (0.1.0)
+  - EasyWeather (0.1.1)
+  - Masonry (1.1.0)
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - EasyWeather (from `../`)
+  - Masonry (~> 1.1.0)
+  - SVProgressHUD (~> 2.2.5)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Masonry
+    - SVProgressHUD
 
 EXTERNAL SOURCES:
   EasyWeather:
     :path: "../"
 
 SPEC CHECKSUMS:
-  EasyWeather: cb7596a5491530846d1d378e137a56d43ef65556
+  EasyWeather: fc55221ed997797a4f1172c9fbedb0af0b268f32
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: e6417689231ca84d9cae9e439b5f429b28cff4c6
+PODFILE CHECKSUM: a50a82a1844f19bc45267fda5ae31d0fd92d9625
 
 COCOAPODS: 1.5.0

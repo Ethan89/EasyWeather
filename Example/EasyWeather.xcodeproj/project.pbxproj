@@ -23,7 +23,9 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		AAE9B15421EF069A004C626C /* EWCityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE9B15321EF069A004C626C /* EWCityListViewController.m */; };
+		AAE9B15821EF0BC3004C626C /* EWWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE9B15721EF0BC3004C626C /* EWWeatherViewController.m */; };
+		AAE9B15B21EF1336004C626C /* EWWeatherInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE9B15A21EF1336004C626C /* EWWeatherInfoModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +61,13 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C085A228908786B5B69C41A /* Pods-EasyWeather_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyWeather_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyWeather_Example/Pods-EasyWeather_Example.release.xcconfig"; sourceTree = "<group>"; };
+		AAE9B15221EF069A004C626C /* EWCityListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EWCityListViewController.h; sourceTree = "<group>"; };
+		AAE9B15321EF069A004C626C /* EWCityListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EWCityListViewController.m; sourceTree = "<group>"; };
+		AAE9B15621EF0BC3004C626C /* EWWeatherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EWWeatherViewController.h; sourceTree = "<group>"; };
+		AAE9B15721EF0BC3004C626C /* EWWeatherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EWWeatherViewController.m; sourceTree = "<group>"; };
+		AAE9B15921EF1336004C626C /* EWWeatherInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EWWeatherInfoModel.h; sourceTree = "<group>"; };
+		AAE9B15A21EF1336004C626C /* EWWeatherInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EWWeatherInfoModel.m; sourceTree = "<group>"; };
 		AF6C33BD3BD0EED4F8B44EB0 /* Pods_EasyWeather_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyWeather_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF9EDAAA94C2B37FB1319E87 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CDD363301BB9C54A0560CCB6 /* Pods-EasyWeather_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyWeather_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyWeather_Tests/Pods-EasyWeather_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,7 +141,12 @@
 			children = (
 				6003F59C195388D20070C39A /* EWAppDelegate.h */,
 				6003F59D195388D20070C39A /* EWAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				AAE9B15221EF069A004C626C /* EWCityListViewController.h */,
+				AAE9B15321EF069A004C626C /* EWCityListViewController.m */,
+				AAE9B15921EF1336004C626C /* EWWeatherInfoModel.h */,
+				AAE9B15A21EF1336004C626C /* EWWeatherInfoModel.m */,
+				AAE9B15621EF0BC3004C626C /* EWWeatherViewController.h */,
+				AAE9B15721EF0BC3004C626C /* EWWeatherViewController.m */,
 				6003F5A5195388D20070C39A /* EWViewController.h */,
 				6003F5A6195388D20070C39A /* EWViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
@@ -279,7 +291,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -323,10 +334,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-EasyWeather_Example/Pods-EasyWeather_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/EasyWeather/EasyWeather.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyWeather.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -359,7 +374,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* EWAppDelegate.m in Sources */,
+				AAE9B15821EF0BC3004C626C /* EWWeatherViewController.m in Sources */,
+				AAE9B15421EF069A004C626C /* EWCityListViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* EWViewController.m in Sources */,
+				AAE9B15B21EF1336004C626C /* EWWeatherInfoModel.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
