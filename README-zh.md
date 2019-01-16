@@ -5,23 +5,22 @@
 [![License](https://img.shields.io/cocoapods/l/EasyWeather.svg?style=flat)](https://cocoapods.org/pods/EasyWeather)
 [![Platform](https://img.shields.io/cocoapods/p/EasyWeather.svg?style=flat)](https://cocoapods.org/pods/EasyWeather)
 
-## Installation
+## 安装
 
-EasyWeather is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+通过Cocoapods来安装
 
 ```ruby
 pod 'EasyWeather'
 ```
 
-## Features
+## 功能
 
-* Get the weather of the day.
-* Get the weather forecast for the next three days.
-* Check sunrise, sunset, maximum temperature, minimum temperature, air index, wind power, wind direction, weather.
-* The network cache is valid for 300 seconds.
+* 查询当天天气。
+* 查询未来三天的天气预报。
+* 能够获取到的天气信息有：日出、日落、空气指数、最低（最高）气温、风力、风向、天气、温度、湿度、PM2.5、PM10、空气质量、感冒指数
+* 网络请求缓存有效期为300秒
 
-## Usage
+## 使用方法
 
 ```Objc
 #import <EasyWeather/EasyWeather.h>
@@ -42,11 +41,11 @@ EWCityModel *cityModel = [easyWeather cityModelWithName:cityName];
 }];
 ```
 
-## Author
+## 作者
 
 Ethan89, yaofeng.guo@gmail.com
 
-## Thanks
+## 感谢
 
 [soゝso](https://www.sojson.com/blog/305.html)
 
