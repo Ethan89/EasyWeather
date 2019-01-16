@@ -5,12 +5,6 @@
 [![License](https://img.shields.io/cocoapods/l/EasyWeather.svg?style=flat)](https://cocoapods.org/pods/EasyWeather)
 [![Platform](https://img.shields.io/cocoapods/p/EasyWeather.svg?style=flat)](https://cocoapods.org/pods/EasyWeather)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
 ## Installation
 
 EasyWeather is available through [CocoaPods](https://cocoapods.org). To install
@@ -20,10 +14,40 @@ it, simply add the following line to your Podfile:
 pod 'EasyWeather'
 ```
 
+## Features
+
+* Get the weather of the day.
+* Get the weather forecast for the next three days.
+* Check sunrise, sunset, maximum temperature, minimum temperature, air index, wind power, wind direction, weather
+* The network cache is valid for 300 seconds.
+
+## Usage
+
+```Objc
+NSString *cityName = @"上海";
+EasyWeather *easyWeather = [[EasyWeather alloc] init];
+EWCityModel *cityModel = [easyWeather cityModelWithName:cityName];
+
+[easyWeather requestWeatherInfoWithCity:cityModel completion:^(NSError *error, NSDictionary *result) {
+    if (!error) {
+        // get weather info from result
+    } else {
+        NSLog(@"ERROR: %@", error.localizedDescription);
+        // get error info
+    }
+}];
+```
+
 ## Author
 
 Ethan89, yaofeng.guo@gmail.com
 
+## Thanks
+
+[soゝso](https://www.sojson.com/blog/305.html)
+
 ## License
 
 EasyWeather is available under the MIT license. See the LICENSE file for more info.
+
+
