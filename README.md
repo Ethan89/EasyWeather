@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/EasyWeather.svg?style=flat)](https://cocoapods.org/pods/EasyWeather)
 [![Platform](https://img.shields.io/cocoapods/p/EasyWeather.svg?style=flat)](https://cocoapods.org/pods/EasyWeather)
 
+[中文](https://github.com/Ethan89/EasyWeather/blob/master/README-zh.md)
+
 ## Installation
 
 EasyWeather is available through [CocoaPods](https://cocoapods.org). To install
